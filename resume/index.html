@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Brett Shook</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* Additional styles specific to the resume page */
+        .pdf-container {
+            width: 100%;
+            height: 800px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .download-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .download-button:hover {
+            background-color: #3367d6;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://github.com/bwshook">Brett Shook</a>
+        <a href="../projects/">Projects</a>
+        <a href="../resume/">Resume</a>
+        <a href="../publications/">Publications</a>
+    </div>
+    
+    <div class="content">
+        <h1>Resume</h1>
+        <a href="brett_shook_resume.pdf" class="download-button" download>Download Resume (PDF)</a>
+        
+        <!-- Embedded PDF viewer -->
+        <object class="pdf-container" data="brett_shook_resume.pdf" type="application/pdf">
+            <p>It appears your browser doesn't support embedded PDFs. 
+               You can <a href="brett_shook_resume.pdf">download the PDF</a> instead.</p>
+        </object>
+    </div>
+</body>
+</html>
