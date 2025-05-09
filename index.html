@@ -8,62 +8,7 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Project card styles */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-        
-        .project-card {
-            border: 1px solid #eee;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .project-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .project-info {
-            padding: 20px;
-        }
-        
-        .project-info h3 {
-            margin-top: 0;
-            margin-bottom: 10px;
-            color: #333;
-        }
-        
-        .project-info p {
-            color: #666;
-            margin-bottom: 15px;
-        }
-        
-        .project-link {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #4285f4;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-        
-        .project-link:hover {
-            background-color: #3367d6;
-        }
+        /* Project card styles removed, publication-item styles are in styles.css */
     </style>
 </head>
 <body>
@@ -76,51 +21,29 @@
     
     <div class="content">
         <p>Welcome and please check out my projects and publications.</p>
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <!-- Wireless Security Project -->
-            <div class="project-card">
-                <img src="projects/wireless_security/rxtx_photos.jpg" alt="Wireless Security Modules" class="project-image">
-                <div class="project-info">
-                    <h3>Wireless Security System</h3>
-                    <p>Custom designed wireless security modules with PCB design and 3D modeling.</p>
-                    <a href="projects/#wireless-security" class="project-link">View Details</a>
-                </div>
-            </div>
-            
-            <!-- Multiplier Chip Project -->
-            <div class="project-card">
-                <img src="projects/multiplier_chip/IC_Lab_Chip.jpg" alt="Multiplier Chip" class="project-image">
-                <div class="project-info">
-                    <h3>Multiplier Chip Design</h3>
-                    <p>Integrated circuit design for a 16x16 bit multiplier chip with functional testing.</p>
-                    <a href="projects/#multiplier-chip" class="project-link">View Details</a>
-                </div>
-            </div>
-            
-            <!-- MLParest Project -->
-            <div class="project-card">
-                <img src="projects/mlparest/mlparest_ss.png" alt="ML Parasitic Estimation" class="project-image">
-                <div class="project-info">
-                    <h3>ML IC Parasitic Estimation</h3>
-                    <p>A tool for interconnect parasitic estimation using machine learning techniques with DAC tutorial.</p>
-                    <a href="projects/#mlparest" class="project-link">View Details</a>
-                </div>
-            </div>
-            
-            <!-- Depolarization Project -->
-            <div class="project-card">
-                <img src="projects/depolarization/depolarization_ss.png" alt="Neuron Depolarization Simulation" class="project-image">
-                <div class="project-info">
-                    <h3>Neuron Depolarization Simulation</h3>
-                    <p>Interactive visualization tool demonstrating neural depolarization.</p>
-                    <a href="projects/depolarization/index.html" class="project-link" target="_blank">View Project</a>
-                </div>
-            </div>
+        <h2>Selected Publications</h2>
+        <div class="publication-item">
+            <h3>The Design and Implementation of a Multi-Chip Power Module Layout Synthesis Tool</h3>
+            <p>MSEE Thesis</p>
+            <a href="publications/shook_thesis_final.pdf" class="publication-link" target="_blank">Download PDF</a>
         </div>
-        
+        <div class="publication-item">
+            <h3>MLParest: Machine Learning based Parasitic Estimation for Custom Circuit Design</h3>
+            <p>DAC Paper</p>
+            <a href="publications/mlparest_preprint.pdf" class="publication-link" target="_blank">Download PDF</a>
+        </div>
+        <div class="publication-item">
+            <h3>Multi-Objective Layout Optimization for Multi-Chip Power Modules considering Electrical Parasitics and Thermal Performance</h3>
+            <p>IEEE COMPEL Paper</p>
+            <a href="publications/COMPEL 2013 Paper_final.pdf" class="publication-link" target="_blank">Download PDF</a>
+        </div>
+        <div class="publication-item">
+            <h3>Multi-Chip Power Module Fast Thermal Modeling for Layout Optimization</h3>
+            <p>CAD and Applications Conference Paper</p>
+            <a href="publications/cad_paper_preprint.pdf" class="publication-link" target="_blank">Download PDF</a>
+        </div>
         <p style="margin-top: 30px; text-align: center;">
-            <a href="projects/" class="project-link">View All Projects</a>
+            <a href="publications/" class="publication-link">View All Publications</a>
         </p>
     </div>
 </body>
